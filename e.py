@@ -1,8 +1,15 @@
-def sum(x,y):
-	c=x+y 
-	return c  
+def speed(a):
+	c=0
+	if a<=70:
+		print("Speed Ok.!")
+	else:
+		b=a-70
+		c=int(b/5)
+		print("Total Demerits Points is",c)
 
-a=int(input("Enter 1st Number"))
-b=int(input("Enter 2nd Number"))
-k=sum(a,b)
-print(k)
+	if (c>=12):
+		print("License Suspended")
+
+
+x=int(input("Enter Speed"))
+speed(x)
